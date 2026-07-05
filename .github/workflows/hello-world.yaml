@@ -1,11 +1,12 @@
-name: Hello World Workflow
+name: hello-world-workflow
 
 on: [push]
 
 jobs:
-  name: hello-world-jobs
-  runs-on: ubuntu-latest
-
-  steps:
-    - name: Hello World Step
-      run: echo "Hello, World!"
+  test:
+    name: hello-world-jobs
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: hello-world-step
+        run: echo "Hello, World!"
